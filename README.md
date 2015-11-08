@@ -15,10 +15,9 @@ A basic environment for an Ionic app to be integrated to a RESTful backend API.
 2. Clone this repository.
 3. `cd` into the project's root directory.
 4. Type the following commands into the terminal:
-    * `make setup`
-    * `make plugins`
-    * `make install`
-    * `make build`
+    * `make install` (Install the necessary project dependencies through npm and bower)
+    * `make plugins` (Install the necessary Cordova plugins)
+    * `make android` (Run Android specific tasks)
     * `gulp` (to generate the `www/dist/` directory).
     * `make serve` (Running this should navigate to `localhost:3000/` in your default web-browser)
 5. Your app-specific code should always be present in `www/` directory.
