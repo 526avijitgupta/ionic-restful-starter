@@ -24,3 +24,35 @@ A basic environment for an Ionic app to be integrated to a RESTful backend API.
 6. Keep `gulp` running, as it would be watching for changes to your `.html`, `.less` and `.js` files inside the respective directories, and running it's tasks automatically.
 7. Page reload should automatically be trigerred on any code-changes inside `www/` (not applicable to changes in `www/lib/`).
 
+### FB login integration:
+
+**Step 1**: Create a Facebook application
+
+    Login to Facebook
+
+    Access https://developers.facebook.com/apps, and click Add New App
+
+    Select www as the platform
+
+    Type a unique name for your app and click Create New Facebook App ID
+
+    Specify a Category, and click Create App ID
+
+    Click My Apps in the menu and select the app you just created
+
+    Click Settings in the left navigation
+
+    Click the Advanced Tab
+
+    In the OAuth Settings section, add the following URLs in the Valid OAuth redirect URIs field:
+        http://localhost:8100/oauthcallback.html (for access using ionic serve)
+        https://www.facebook.com/connect/login_success.html (for access from Cordova)
+
+    Click Save Changes
+
+
+**Step 2**: Change `YOUR _APP_ID` to your application id, at the first line of `app.run`.
+
+  `ngFB.init({appId: 'YOUR_APP_ID'});`
+  
+  
