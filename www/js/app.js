@@ -27,7 +27,7 @@ angular.module('myApp', ['ionic', 'ngOpenFB', 'myApp.routes'])
                      .then(
                        function (res) {
                          if (res.status === 'connected') {
-                           console.log('Facebook login succeeded');
+                           alert('Facebook login succeeded');
                            $scope.successLogin = true;
                          }
                          else {
