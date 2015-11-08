@@ -1,0 +1,26 @@
+<ion-view title="Login">
+    <ion-content padding="true"
+                 scroll="false"
+                 class="has-header">
+        <div class="spacer"
+             style="width: 200px; height: 131px;">
+        </div>
+        <button class="button button-calm button-block button-large icon-left ion-social-facebook"
+                data-ng-click="fbLogin($event)"
+                data-ng-disabled="fbLoginLoader">
+            Continue with Facebook
+        </button>
+        <div class="spacer"
+             style="width: 300px; height: 19px;">
+        </div>
+        <button class="button button-assertive button-block button-large icon-left ion-social-google"
+                data-ng-click="gPlusLogin($event)">
+            Continue with Google
+        </button>
+        <!-- <div data-ng-show="loginMsg"
+             data-ng-class="(successLogin) ? 'success': 'error'">
+             <close-msg></close-msg>
+             {{loginMsg}}
+             </div> -->
+    </ion-content>
+</ion-view>

@@ -1,0 +1,25 @@
+{
+  "name": "ionic-restful-starter",
+  "private": "true",
+  "homepage": "https://github.com/526avijitgupta/ionic-restful-starter",
+  "authors": [
+    "Avijit Gupta"
+  ],
+  "description": "A basic environment for an Ionic app to be integrated to a RESTful backend API.",
+  "moduleType": [
+    "globals"
+  ],
+  "keywords": [
+    "ionic",
+    "rest",
+    "starter"
+  ],
+  "license": "MIT",
+  "ignore": [],
+  "devDependencies": {
+    "ionic": "~1.1.1",
+    "less": "~2.5.1",
+    "openfb": "~0.5.0",
+    "semantic-ui": "~2.0.7"
+  }
+}

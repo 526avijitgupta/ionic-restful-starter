@@ -1,0 +1,15 @@
+{
+  "name": "ionic-restful-starter",
+  "app_id": "",
+  "proxies": [
+  {
+    // a string that will be matched against the beginning of incoming request URL
+    // Example: "/api"
+    "path": "",
+
+    // url to where the proxied request should go.
+    // Example: "http://locahost:5000/api"
+    "proxyUrl": ""
+  }
+  ]
+}
