@@ -14,7 +14,10 @@ plugins:
 android:
 	ionic platform add android
 	ionic build android
-
+	
+watch:
+	gulp
+	
 # Run your app on a device/emulator/web browser
 
 serve:
